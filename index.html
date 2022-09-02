@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!--  Fontawsom css -->
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!--  Google Fonts Links -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@100;200;400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap css Link -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Personal css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Bootstrap</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container my-3">
+      <div class="logo">
+        <a class="navbar-brand" href="#"> <b>Siboria.</b></a>
+      </div>
+      <div class="primary-menu">
+        <button class="btn navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="collection-btn btn-hide">Our Collections</button>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-lg-4 col-sm-12 h-heading">
+          <div class="h-text">
+            <h1><strong>World's Biggest</strong></h1>
+            <h1 class="heading"><strong>Anitque Collection</strong></h1>
+          </div>
+          <p class="my-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consequatur exercitationem,
+            porro, nulla</p>
+          <button class="discover-btn">Discover Now</button>
+          <div class="watch-video">
+            <button class="watch-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <a class="watch">Watch Video</a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 header-img">
+          <img width="450" class="img-fluid" src="assets/images/header-img.png" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-12 h-icons">
+
+          <div class="icons d-flex">
+            <div class="header-icons">
+              <img width="25" src="assets/images/star.png" alt="">
+            </div>
+            <div class="mx-3 icons-text">
+              <h1><b>1322</b></h1>
+              <span class="px-2">year</span>
+            </div>
+          </div>
+          <div class="icons d-flex py-4">
+            <div class="header-icons">
+              <img width="25" src="assets/images/world-cup.png" alt="">
+            </div>
+            <div class="mx-3 icons-text">
+              <h1><b>29</b></h1>
+              <span class="px-2">bids so far</span>
+            </div>
+          </div>
+          <div class="icons d-flex">
+            <div class="header-icons">
+              <img width="25" src="assets/images/house.png" alt="">
+            </div>
+            <div class="mx-3 icons-text">
+              <h1><b>China</b></h1>
+              <span class="px-2">Origin</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!--Mobile Menu Offcanvas -->
+  <div class="offcanvas offcanvas-end text-center" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Quick Links</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#service">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button class="collection-btn">Our Collections</button>
+    </div>
+  </div>
+
+  <!-- Filter Section -->
+  <div class="container">
+    <div class="filter mt-5">
+      <div class="row">
+        <div class="col p-3">
+          <h5>Location</h5>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">Norway</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col p-3">
+          <h5>Religion</h5>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">
+              Asatro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col p-3">
+          <h5>Year</h5>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">
+              720 AD
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col p-3">
+          <h5>Type</h5>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false">
+              Weapons
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col p-3"><button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slider -->
+  <div class="container swiper-custom mt-5">
+
+    <!-- navigation buttons -->
+    <div class="row btn-area">
+      <div class="col-lg-6 col-sm-12">
+        <h2><strong>Recently Added</strong></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis similique</p>
+      </div>
+      <div class="col-lg-6 col-sm-12 arrow-btn">
+        <div class="swiper-btn-prev square-btn"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
+        <div class="swiper-btn-next square-btn"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+      </div>
+    </div>
+
+
+    <!-- Slider main container -->
+    <div class="swiper mySwiper mt-3">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+
+          <div class="card card-1">
+            <div class="card-img">
+              <img src="assets/images/tractor.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-content mt-3">
+              <h5 class="card-title m-0">Yet bed any for travelling</h5>
+              <small>Year 1192 <span class="mx-2">&#124;</span>Weapons</small>
+              <div class="row mt-3">
+                <div class="col">
+                  <h3><strong>$850.30</strong> </h3>
+                </div>
+                <div class="col text-end">
+                  <a href="#" class="btn btn-outline-primary">View Detail</a>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-5">
+                  <h6><strong>14 bid so far</strong> </h6>
+                </div>
+                <div class="col text-end">
+                  <p>Bidding Close 12 days</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="swiper-slide">
+
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/tractor.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-content mt-3">
+              <h5 class="card-title m-0">Yet bed any for travelling</h5>
+              <small>Year 1192 <span class="mx-2">&#124;</span>Weapons</small>
+
+              <div class="row mt-3">
+                <div class="col">
+                  <h3><strong>$850.30</strong> </h3>
+                </div>
+                <div class="col text-end">
+                  <a href="#" class="btn btn-outline-primary">View Detail</a>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-5">
+                  <h6><strong>14 bid so far</strong> </h6>
+                </div>
+                <div class="col text-end">
+                  <p>Bidding Close 12 days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/bone.png" alt="...">
+            </div>
+            <div class="card-content mt-3">
+              <h5 class="card-title m-0">Yet bed any for travelling</h5>
+              <small>Year 1192 <span class="mx-2">&#124;</span>Weapons</small>
+              <div class="row mt-3">
+                <div class="col">
+                  <h3><strong>$850.30</strong> </h3>
+                </div>
+                <div class="col text-end">
+                  <a href="#" class="btn btn-outline-primary">View Detail</a>
+                </div>
+              </div>
+
+              <div class="row mt-4">
+                <div class="col-5">
+                  <h6><strong>14 bid so far</strong> </h6>
+                </div>
+                <div class="col text-end">
+                  <p>Bidding Close 12 days</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Slider End -->
+
+  <!-- Categories -->
+  <div class="container Categories mt-5">
+
+    <h2><strong>Top Categories</strong></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis similique</p>
+
+    <div class="row mt-4">
+      <div class="col-lg-3 col-sm-12">
+
+        <div class="img-card">
+          <span>112</span>
+          <div class="img-text">
+            <h4>Weapons</h4>
+            <small>Worefall</small>
+          </div>
+        </div>
+
+        <div class="img-card mt-4">
+          <span>112</span>
+          <div class="img-text">
+            <h6>Weapons</h6>
+            <small>Worefall</small>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="img-card statue">
+          <span>112</span>
+          <div class="img-text">
+            <h4>Weapons</h4>
+            <small>Worefall</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-sm-12">
+        <div class="img-card wall">
+          <span>112</span>
+          <div class="img-text">
+            <h4>Weapons</h4>
+            <small>Worefall</small>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="img-card mt-4 watches">
+            <span>112</span>
+            <div class="img-text">
+              <h4>Weapons</h4>
+              <small>Worefall</small>
+            </div>
+          </div>
+
+          <div class="img-card mt-4 furniture">
+            <span>112</span>
+            <div class="img-text">
+              <h4>Weapons</h4>
+              <small>Worefall</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- Feedback -->
+  <div class="container feedback mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <img class="img-fluid" width="300" src="assets/images/statue.png" alt="">
+      </div>
+      <div class="col-lg-6 col-sm-12 feedback-text">
+        <h2><strong> Buyer's Feedback</strong></h2>
+        <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae non nihil dignissimos corrupti
+          laboriosam neque adipisci aperiam architecto? Aliquam commodi minima consectetur quibusdam laboriosam? In odio
+          accusantium maiores laborum ducimus!</p>
+        <div class="client d-flex">
+          <div class="profile">
+          </div>
+          <div class=" px-3">
+            <div class="profile-name">
+              <h6>AR Shakir</h6>
+              <small>Web Developer</small>
+            </div>
+            <div class="start d-flex mt-2">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="container">
+    <div class="row newsletter mt-5">
+      <div class="col-lg-6 col-sm-12 p-5">
+        <h2>Subscribe our newsletter</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <div class="input-group flex-nowrap mt-4">
+          <input type="email" class="form-control p-3" placeholder="Enter your email here" aria-label="Username"
+            aria-describedby="addon-wrapping">
+          <span class="input-group-text" id="addon-wrapping"><i class="fa fa-paper-plane px-2"
+              aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 gramophone">
+        <img src="assets/images/gramophone.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer mt-5">
+
+      <div class="row footer-link">
+        <div class="col-lg-3">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Seboria</h5>
+          <ul>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+            <li><a href="">Download</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Get in Touch</h5>
+          <ul>
+            <li>
+              <p>Feel free to get in touch with us via email</p>
+            </li>
+            <li><a href="" class="email"><strong> anees2844gmail.com</strong></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container my-3">
+          <div class="logo">
+            <a class="navbar-brand" href="#"> <b>Siboria.</b></a>
+          </div>
+          <div class="primary-menu btn-hidden">
+            <button class="btn navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-link d-flex">
+            <div class="div social-btn ">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="div social-btn">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+            <div class="div social-btn">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+      breakpoints: {
+        // when window width is >= 480px
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
